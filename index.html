@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body" data-bs-theme="dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html"><strong>Ekart</strong></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/login.html">Login</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/register">Register</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                </nav>
+            </div> <!-- End of header -->
+        </div> <!-- End of row -->
+        
+        <div class="row">
+            <div class="col-md-3 mt-4 bg-info-subtle p-3">  
+                <h4>Filter by Category</h4>
+                <hr>
+                <p><a href="" class="anchor">All</a></p>
+                <p><a href="/catfilter/1" class="anchor">By Mobile</a></p>
+                <p><a href="/catfilter/2" class="anchor">By Shoes</a></p>
+                <p><a href="/catfilter/3" class="anchor">By Laptop</a></p>
+                <p><a href="/catfilter/4" class="anchor">By Clothes</a></p>
+                <h5>Filter by Price</h5>
+                <hr>
+                <form method="GET" action="/range">
+                    <div class="mb-3">
+                        <label for="input1" class="form-label">Minimum:</label>
+                        <input type="number" class="form-control" id="input1" name="umin" placeholder="Min Price">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input2" class="form-label">Maximum:</label>
+                        <input type="number" class="form-control" id="input2" name="umax" placeholder="Max Price">
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="btn btn-success" value="Search">
+                    </div>
+                </form>
+                <h6 class="mt-3">Sort by Price</h6>
+                <p><a href="/sort/1" class="anchor">High to Low</a></p>
+                <p><a href="/sort/0" class="anchor">Low to High</a></p>
+                <hr>
+            </div> <!-- End of sidebar -->
+            <div class="col-md-9 mt-3 bg-light p-3">
+                <div class="row">
+                    <!-- Product list -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="https://rukminim2.flixcart.com/image/850/1000/l0fm07k0/shirt/v/m/a/s-sh-55-getchi-original-imagc8fd4wye86t7.jpeg?q=90&crop=false" class="card-img-top" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Blue Shirt</h5>
+                                <p class="card-text">Best Quality Shirt</p>
+                                <a href="#" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="https://rukminim2.flixcart.com/image/850/1000/l0fm07k0/shirt/v/m/a/s-sh-55-getchi-original-imagc8fd4wye86t7.jpeg?q=90&crop=false" class="card-img-top" alt="Product 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Blue Shirt</h5>
+                                <p class="card-text">Best Quality Red Shirt</p>
+                                <a href="#" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="https://rukminim2.flixcart.com/image/850/1000/l0fm07k0/shirt/v/m/a/s-sh-55-getchi-original-imagc8fd4wye86t7.jpeg?q=90&crop=false" class="card-img-top" alt="Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">BBlue Shirt</h5>
+                                <p class="card-text">Best Quality Red Shirt</p>
+                                <a href="#" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                          <img src="product3.jpg" class="card-img-top" alt="Product 4">
+                          <div class="card-body">
+                              <h5 class="card-title">BBlue Shirt</h5>
+                              <p class="card-text">Best Quality Red Shirt</p>
+                              <a href="#" class="btn btn-primary">See details</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            
